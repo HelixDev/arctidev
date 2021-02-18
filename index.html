@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false;">
+    <head>
+        <title>Deadless Games</title>
+        <link rel="stylesheet" href="m.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        </style>
+        <script>
+            document.onkeydown = function (e) {
+                if (event.keyCode == 123) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+                    return false;
+                }
+                if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p id="watermark">Made with <3 by Arcti.</p>
+        <div class="maintxtdiv">
+            <p id="maintitle">Deadless Games</p>
+            <div class="button_container">
+                <p class="description">Deadless Games is an indie game development studio.</p>
+                <button onclick="window.location.href='https://discord.gg/Rfd5ARVUUc'" class="btn"><span>Join our Discord</span></button>
+                <img draggable="false" id="dllogo" src="https://media.discordapp.net/attachments/790875050491379744/809829605623595008/logo_1.png?width=640&height=640">
+            </div>
+        </div>
+        <div class="showcase">
+            <p>Some of our artworks:</p>
+            <img draggable="false" id="img1" src="https://cdn.discordapp.com/attachments/790875050491379744/811672516627005440/yespl.png"><br><br><br>
+            <img draggable="false" id="img2" src="https://cdn.discordapp.com/attachments/790875050491379744/811672495798485002/ok.png">
+        </div>
+    </body>
+</html>
